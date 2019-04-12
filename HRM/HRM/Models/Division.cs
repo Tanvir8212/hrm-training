@@ -18,5 +18,7 @@ namespace HRM.Models
         [Display(Name="Division Name")]
         public String Name { get; set; }
 
+        public List<Department> Departments { get; set; }
+
     }
 }

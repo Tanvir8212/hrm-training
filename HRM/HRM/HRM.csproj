@@ -168,6 +168,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\DepartmentsController.cs" />
     <Compile Include="Controllers\DivisionsController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
@@ -182,8 +183,13 @@
     <Compile Include="Migrations\201904121125133_mig02.Designer.cs">
       <DependentUpon>201904121125133_mig02.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904121206189_mig03.cs" />
+    <Compile Include="Migrations\201904121206189_mig03.Designer.cs">
+      <DependentUpon>201904121206189_mig03.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
+    <Compile Include="Models\Department.cs" />
     <Compile Include="Models\Division.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -254,6 +260,11 @@
     <Content Include="Views\Divisions\Details.cshtml" />
     <Content Include="Views\Divisions\Edit.cshtml" />
     <Content Include="Views\Divisions\Index.cshtml" />
+    <Content Include="Views\Departments\Create.cshtml" />
+    <Content Include="Views\Departments\Delete.cshtml" />
+    <Content Include="Views\Departments\Details.cshtml" />
+    <Content Include="Views\Departments\Edit.cshtml" />
+    <Content Include="Views\Departments\Index.cshtml" />
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
@@ -270,6 +281,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201904121125133_mig02.resx">
       <DependentUpon>201904121125133_mig02.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904121206189_mig03.resx">
+      <DependentUpon>201904121206189_mig03.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
